@@ -37,7 +37,7 @@ void main() {
   kucukSayi = (sayi1 < sayi2) ? sayi1 : sayi2;
   print("Küçük sayı: $kucukSayi");
 
-  String? danisman;
+  String? danisman = null;
 
   print("Danışmanınız ${danisman ?? "Mehmet Bey"}");
 
