@@ -4,6 +4,7 @@
 ///
 /// 3 tip döngü vardır:
 ///   * While
+///   * Do While
 ///   * For
 ///   * For in (Foreach)
 ///
@@ -41,6 +42,8 @@ void main() {
   } */
 
   for (int sayac = 1; sayac <= 10; sayac++) {
-    print(sayac);
+    if ((sayac % 2) == 0) {
+      print(sayac);
+    }
   }
 }
