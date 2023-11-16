@@ -1,12 +1,18 @@
 //  donus_tipi fonksiyon_ismi() {}
 
+//  1) Problemleri daha küçük alt problemlere ayırarak çözmemizi kolaylaştırır.
+//  2) Tekrar tekrar aynı kodları yazmamıza gerek kalmaz.
+
 void main(List<String> args) {
   // print("Hello World!");
 
-  // toplamYazdir();
+  toplamYazdir();
 
-  // int toplam = topla(15, 20, 30, 35);
-  int toplam = toplamaIslemi(15, 20);
+  print("------------");
+
+  int toplam = topla(15, 20, 30, 40);
+
+  // int toplam = toplamaIslemi(15, 20);
   print("Toplam: $toplam");
 
   // kullaniciBilgileriYazdir(
@@ -38,7 +44,7 @@ int topla(int sayi1, int sayi2, [int sayi3 = 0, int sayi4 = 0]) {
   return sayi1 + sayi2 + sayi3 + sayi4;
 }
 
-//  İsimlendirilmiş Fonksiyon
+//  İsimlendirilmiş Parametre
 void kullaniciBilgileriYazdir({
   required String name,
   required String tc,
@@ -60,4 +66,4 @@ void kullaniciBilgileriYazdir({
 }
 
 //  Fat Arrow
-int toplamaIslemi(int sayi1, int sayi2) => sayi1 + sayi2;
+void toplamaIslemi(int sayi1, int sayi2) => print(sayi1 + sayi2);
