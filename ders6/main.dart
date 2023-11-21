@@ -2,7 +2,7 @@
 /// Değişken uzunluklu listeler
 
 void main(List<String> args) {
-  List<int> sayilar = List.filled(8, 30); //  [30, 30, 30, 30, 30]
+  List<int> sayilar = List.filled(5, 30); //  [30, 30, 30, 30, 30]
   print(sayilar);
 
   sayilar[0] = 8;
@@ -11,7 +11,9 @@ void main(List<String> args) {
   sayilar[3] = 15;
   print(sayilar);
   print(sayilar[3]);
-  print(sayilar[5]);
+  print(sayilar[4]);
+
+  sayilar[5] = 50;
 
   print("Liste uzunluğu: ${sayilar.length}");
   print("----------------");
