@@ -10,6 +10,8 @@ void main(List<String> args) {
   sozluk["pencil"] = "uçlu kalem";
   sozluk["computer"] = "bilgisayar";
 
+  print(sozluk["pencil"]);
+
   print(sozluk);
 
   sozluk.remove("window");
