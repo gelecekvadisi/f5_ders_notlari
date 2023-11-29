@@ -1,4 +1,6 @@
 void main(List<String> args) {
+  Araba corolla = Araba("mavi");
+
   print("-----------");
   Ogrenci ahmet = new Ogrenci(
     adi: "Ahmet",
@@ -55,11 +57,32 @@ void main(List<String> args) {
   print(mehmet.soyAdi);
 
   print("${ahmet.adi} ${ahmet.soyAdi}");
+
+  corolla.calistir(name: "Corolla");
 }
 
 //  snake_case
 //  camelCase
 //  PascalCase
+
+class Araba {
+  String? renk;
+  String? marka;
+  String? model;
+  bool? otomatikMi;
+  int? modelYili;
+  double? km;
+
+  // Araba({this.renk, this.marka});
+  Araba(this.renk);
+  Araba.markaliKurucu(this.renk, this.marka);
+
+
+
+  void calistir({String? name}) {
+    print("$model araba çalıştı");
+  }
+}
 
 class Ogrenci {
   //  instance fields
