@@ -4,7 +4,9 @@ class VeritabaniIslemleri {
 
   /// get (getter)
   /// set (setter)
-  String get userName => _userName;
+  String get userName {
+    return _userName;
+  }
   void set userName(String userName) {
     String sayfaAdi = "Ödeme Sayfası";
     if (sayfaAdi != "Kullanıcı Ayarları") {

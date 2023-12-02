@@ -20,7 +20,7 @@ class Araba {
   Araba(this.marka, this.model, this.renk, [this.otomatikMi = false]);
 
   Araba.sifirAraba(this.marka, this.model, this.renk,
-      [this.otomatikMi = false]) {
+      [this.otomatikMi = true]) {
     oncekiSahibi = "Ankara Bayisi";
   }
 
