@@ -7,6 +7,16 @@ void main(List<String> args) {
 
   final time = DateTime.now();
   // const DateTime time2 = DateTime.now();
+  const Ogrenci ahmet = Ogrenci();
+
+  const Ogrenci mehmet = Ogrenci();
+
+  if (ahmet == mehmet) {
+    print("eşit");
+  } else {
+    print("eşit değil");
+  }
+
 
   print(DateTime.now());
   for(int i=0; i<100000; i++){}
@@ -20,8 +30,10 @@ void main(List<String> args) {
 
 class Ogrenci {
   final String? ad = "";
-  String? soyad;
-  List<String>? aldigiDersler;
-  String? danisman;
-  String? tc;
+  final String? soyad= "";
+  final List<String>? aldigiDersler = const [];
+  final String? danisman = "";
+  final String? tc = "";
+
+  const Ogrenci();
 }

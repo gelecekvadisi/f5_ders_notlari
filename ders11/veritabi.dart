@@ -1,5 +1,3 @@
-import 'dart:html';
-
 abstract class Veritabani {
   String? userName = "Ahmet";
   String? password;
