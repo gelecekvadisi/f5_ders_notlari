@@ -20,29 +20,60 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.orange,
           title: const Text("İlk Uygulamam"),
         ),
-        body: Container(
-          color: Colors.redAccent,
-          child: const Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(Icons.access_alarm, size: 48),
-                  Icon(Icons.access_alarm, size: 48),
-                  Icon(Icons.access_alarm, size: 48),
-                  Icon(Icons.access_alarm, size: 48),
-                ],
+        body: Row(
+          children: [
+            Container(
+              color: Colors.red,
+              width: 120,
+              height: 100,
+            ),
+            Container(
+              color: Colors.blue,
+              width: 120,
+              height: 100,
+            ),
+            Container(
+              color: Colors.green,
+              width: 120,
+              height: 100,
+            ),
+            Flexible(
+              flex: 2,
+              child: Container(
+                color: Colors.purple,
+                width: 120,
+                height: 100,
               ),
+            ),
+            // Container(color: Colors.brown, width: 100, height: 100,),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Container columnRow() {
+    return Container(
+      color: Colors.redAccent,
+      child: const Column(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
               Icon(Icons.access_alarm, size: 48),
               Icon(Icons.access_alarm, size: 48),
               Icon(Icons.access_alarm, size: 48),
               Icon(Icons.access_alarm, size: 48),
             ],
           ),
-        ),
+          Icon(Icons.access_alarm, size: 48),
+          Icon(Icons.access_alarm, size: 48),
+          Icon(Icons.access_alarm, size: 48),
+          Icon(Icons.access_alarm, size: 48),
+        ],
       ),
     );
   }
@@ -69,7 +100,7 @@ class MyApp extends StatelessWidget {
           image: const DecorationImage(
             image: NetworkImage(
                 "https://hips.hearstapps.com/hmg-prod/images/2024-lamborghini-revuelto-127-641a1d518802b.jpg?crop=0.813xw:0.721xh;0.0994xw,0.128xh&resize=1200:*"),
-            fit: BoxFit.cover,
+            fit: BoxFit.contain,
             // repeat: ImageRepeat.repeat
           ),
           boxShadow: const [
