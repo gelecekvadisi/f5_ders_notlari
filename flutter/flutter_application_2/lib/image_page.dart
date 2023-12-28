@@ -21,7 +21,7 @@ class ImagePage extends StatelessWidget {
                       width: 200,
                       height: 200,
                       decoration: BoxDecoration(
-                        image: DecorationImage(image: NetworkImage(imageUrl), fit: BoxFit.cover)
+                        image: DecorationImage(image: AssetImage("assets/images/car.jpg"), fit: BoxFit.cover)
                       ),
                     ),
                   ),

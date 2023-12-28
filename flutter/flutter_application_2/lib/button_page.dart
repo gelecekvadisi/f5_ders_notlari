@@ -27,17 +27,41 @@ class ButtonPage extends StatelessWidget {
                 return Colors.red;
               }),
               foregroundColor: MaterialStateProperty.all(Colors.white),
-              overlayColor: MaterialStateProperty.all(Colors.white.withOpacity(0.1)),
+              overlayColor: MaterialStateProperty.all(
+                Colors.white.withOpacity(0.1),
+              ),
             ),
             child: Text("TextButton"),
           ),
-          TextButton.icon(onPressed: () {}, icon: Icon(Icons.add_a_photo), label: Text("TextButton.icon")),
-          ElevatedButton(onPressed: () {},
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.red, foregroundColor: Colors.white, elevation: 20, shadowColor: Colors.pink),
-            child: Text("ElevatedButton")),
-          ElevatedButton.icon(onPressed: () {}, icon: Icon(Icons.person), label: Text("ElevatedButton.icon")),
-          OutlinedButton(onPressed: () {}, child: Text("OutlinedButton")),
-          OutlinedButton.icon(onPressed: () {}, icon: Icon(Icons.favorite), label: Text("OutlinedButton.icon")),
+          TextButton.icon(
+            onPressed: () {},
+            icon: Icon(Icons.add_a_photo),
+            label: Text("TextButton.icon"),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.red,
+              foregroundColor: Colors.white,
+              elevation: 20,
+              shadowColor: Colors.pink,
+            ),
+            child: Text("ElevatedButton"),
+          ),
+          ElevatedButton.icon(
+            onPressed: () {},
+            icon: Icon(Icons.person),
+            label: Text("ElevatedButton.icon"),
+          ),
+          OutlinedButton(
+            onPressed: () {},
+            child: Text("OutlinedButton"),
+          ),
+          OutlinedButton.icon(
+            onPressed: () {},
+            icon: Icon(Icons.favorite),
+            label: Text("OutlinedButton.icon"),
+          ),
         ],
       ),
     );
